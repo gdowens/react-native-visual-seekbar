@@ -1,7 +1,7 @@
 {
   "name": "react-native-visual-seekbar",
   "version": "0.1.0",
-  "description": "A visual seekbar for react-native-video",
+  "description": "A visual seekbar for react-native-video built on iOS ICGVideoTrimmer",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
