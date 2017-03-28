@@ -35,5 +35,7 @@ RCT_EXPORT_VIEW_PROPERTY(currentTime, NSNumber);
 RCT_EXPORT_VIEW_PROPERTY(themeColor, NSString);
 RCT_EXPORT_VIEW_PROPERTY(trackerColor, NSString);
 RCT_EXPORT_VIEW_PROPERTY(trackerHeadColor, NSString);
+RCT_EXPORT_VIEW_PROPERTY(timeColor, NSString);
+
 
 @end

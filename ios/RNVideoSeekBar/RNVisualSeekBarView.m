@@ -26,6 +26,7 @@
   CGFloat _thumbWidth;
   UIColor *_trackerColor;
   UIColor *_trackerHeadColor;
+  UIColor *_timeColor;
 }
 
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher
@@ -109,6 +110,15 @@
   }
 }
 
+- (void)setTimeColor:(NSString *)timeColor
+{
+  if (_trimmerView != nil) {
+    NSNumber *newColor = [[[NSNumberFormatter alloc] init] numberFromString:timeColor];
+    _timeColor = [RCTConvert UIColor:newColor];
+    [self updateView];
+  }
+}
+
 
 #pragma mark - Trimmer Delegate Methods
 
@@ -131,6 +141,7 @@
     _trimmerView.themeColor = _themeColor;
     _trimmerView.trackerColor = _trackerColor;
     _trimmerView.trackerHeadColor = _trackerHeadColor;
+    _trimmerView.timeColor = _timeColor;
     [_trimmerView resetSubviews];
   }
 }

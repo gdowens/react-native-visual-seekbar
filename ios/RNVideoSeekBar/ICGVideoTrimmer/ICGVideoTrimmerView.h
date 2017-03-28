@@ -28,6 +28,9 @@ NS_ASSUME_NONNULL_BEGIN
 // Customize color for tracker head (the inverted triangle at top)
 @property (assign ,nonatomic) UIColor *trackerHeadColor;
 
+// Customize color for time text displayed along the top
+@property (assign ,nonatomic) UIColor *timeColor;
+
 // Custom width for the top and bottom borders
 @property (assign, nonatomic) CGFloat borderWidth;
 

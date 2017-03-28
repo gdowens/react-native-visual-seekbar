@@ -86,7 +86,12 @@
 
 - (UIColor *)trackerHeadColor
 {
-  return _trackerHeadColor ?: [UIColor whiteColor];
+  return _trackerHeadColor ?: [UIColor clearColor];
+}
+
+- (UIColor *)timeColor
+{
+  return _timeColor ?: [UIColor whiteColor];
 }
 
 - (CGFloat)borderWidth
@@ -137,7 +142,7 @@
   self.timeText.clipsToBounds = NO;
   self.timeText.textAlignment = NSTextAlignmentLeft;
   self.timeText.backgroundColor = [UIColor clearColor];
-  self.timeText.textColor = [UIColor whiteColor];
+  self.timeText.textColor = self.timeColor;
 
   [trackerContainer addSubview:self.timeText];
 
@@ -320,11 +325,15 @@
 
 - (void)seekToTime:(CGFloat) time
 {
-  [self updateTimeText];
   BOOL animateTransition = trunc(time*100) != trunc(self.time*100);
   self.time = time;
+  [self updateTimeText];
   CGFloat posToMove = time * self.widthPerSecond;
   CGRect trackerFrame = self.trackerView.frame;
+
+  // also the possibility that the tracker is out of sync with time
+  animateTransition = animateTransition || (trunc(posToMove * 100) != trunc(trackerFrame.origin.x));
+
   CGFloat delta = posToMove - trackerFrame.origin.x;
   trackerFrame.origin.x = posToMove;
 
@@ -376,7 +385,7 @@
     rect.size.width = videoScreen.size.width;
     tmp.frame = rect;
     [self.frameView addSubview:tmp];
-    picWidth = tmp.frame.size.width / 3;
+    picWidth = tmp.frame.size.width / 2;
     CGImageRelease(halfWayImage);
   }
 
@@ -440,6 +449,7 @@
         [imageView setImage:videoScreen];
         if (i > minFramesNeeded) {
           _viewsInitialized = YES;
+          [self scrollViewMightAdjust:YES];
         }
       });
     }

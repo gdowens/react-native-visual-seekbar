@@ -34,31 +34,34 @@ export default class VisualSeekBarView extends Component {
     currentTime: PropTypes.number,
     trackerColor: PropTypes.string,
     trackerHeadColor: PropTypes.string,
+    timeColor: PropTypes.string,
   };
 
   static defaultProps = {
     themeColor: 'gray',
     trackerColor: 'black',
-    trackerHeadColor: 'black',
+    trackerHeadColor: 'rgba(0,0,0,0)',
+    timeColor: 'white',
   };
 
   constructor(props) {
     super(props);
     const {
-      currentTime,
       themeColor,
       trackerColor,
       trackerHeadColor,
+      timeColor,
       source
     } = props;
     this.state = {
       movingTracker: false,
-      source: this.createSource(props.source)
+      source: this.createSource(source)
     };
     this._handleTrackerMove = this._handleTrackerMove.bind(this);
     this._themeColor = processColor(themeColor).toString();
     this._trackerColor = processColor(trackerColor).toString();
     this._trackerHeadColor = processColor(trackerHeadColor).toString();
+    this._timeColor = processColor(timeColor).toString();
   }
 
   componentWillMount() {
@@ -119,6 +122,7 @@ export default class VisualSeekBarView extends Component {
         themeColor={this._themeColor}
         trackerColor={this._trackerColor}
         trackerHeadColor={this._trackerHeadColor}
+        timeColor={this._timeColor}
         onTrackerMove={this._handleTrackerMove}
         pointerEvents={POINTER_EVENTS}
       />
