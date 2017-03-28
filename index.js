@@ -126,4 +126,4 @@ export default class VisualSeekBarView extends Component {
   }
 }
 
-const RNVisualSeekBarView = requireNativeComponent("RNVisualSeekBar", VisualSeekBarView);
+const RNVisualSeekBarView = requireNativeComponent("RNVisualSeekBarView", VisualSeekBarView);

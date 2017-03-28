@@ -22,10 +22,9 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		4DC14EB90BC74CEF8316B72A /* libRNVisualSeekBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D1C9EA85EC435BB5A57375 /* libRNVisualSeekBar.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		862C486A1E87382B00C12EBD /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B07FAF1A68108700A75B9A /* AppDelegate.h */; };
-		8D50C6EBE66D45FD83A593B9 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D733252EDB3A42E899BF5A6C /* libRCTVideo.a */; };
-		F76CF04195C94FF5B045EEB6 /* libRNVideoSeekBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB9F7ECB99C43C699629E43 /* libRNVideoSeekBar.a */; };
+		F6FE8CCC45644E12BAF66D62 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670FF72F736E4AF58F4664F5 /* libRCTVideo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,68 +105,68 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
-		860BA7041E86164100E52C57 /* PBXContainerItemProxy */ = {
+		8689445A1E89E1720021174D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A283A1D9B042B00D4039D;
 			remoteInfo = "RCTImage-tvOS";
 		};
-		860BA7081E86164100E52C57 /* PBXContainerItemProxy */ = {
+		8689445E1E89E1720021174D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A28471D9B043800D4039D;
 			remoteInfo = "RCTLinking-tvOS";
 		};
-		860BA70C1E86164100E52C57 /* PBXContainerItemProxy */ = {
+		868944621E89E1720021174D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A28541D9B044C00D4039D;
 			remoteInfo = "RCTNetwork-tvOS";
 		};
-		860BA7101E86164100E52C57 /* PBXContainerItemProxy */ = {
+		868944661E89E1720021174D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A28611D9B046600D4039D;
 			remoteInfo = "RCTSettings-tvOS";
 		};
-		860BA7141E86164100E52C57 /* PBXContainerItemProxy */ = {
+		8689446A1E89E1720021174D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A287B1D9B048500D4039D;
 			remoteInfo = "RCTText-tvOS";
 		};
-		860BA7181E86164100E52C57 /* PBXContainerItemProxy */ = {
+		8689446E1E89E1720021174D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CC92FA5FD67144698D8DA775 /* RCTVideo.xcodeproj */;
+			containerPortal = 8B234344CF8A4FEDA1EE9016 /* RCTVideo.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RCTVideo;
 		};
-		860BA71C1E86164100E52C57 /* PBXContainerItemProxy */ = {
+		868944721E89E1720021174D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A28881D9B049200D4039D;
 			remoteInfo = "RCTWebSocket-tvOS";
 		};
-		860BA7201E86164100E52C57 /* PBXContainerItemProxy */ = {
+		868944761E89E1720021174D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A28131D9B038B00D4039D;
 			remoteInfo = "React-tvOS";
 		};
-		862C48CB1E8741FC00C12EBD /* PBXContainerItemProxy */ = {
+		868944791E89E1720021174D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5AD1FEB8DB15458E922F7AF8 /* RNVideoSeekBar.xcodeproj */;
+			containerPortal = 31DF382DDE9841D0BFE8DE61 /* RNVisualSeekBar.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 860BA72D1E862BD900E52C57;
-			remoteInfo = RNVideoSeekBar;
+			remoteInfo = RNVisualSeekBar;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -191,18 +190,12 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNSeekBarExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNSeekBarExample/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		5AD1FEB8DB15458E922F7AF8 /* RNVideoSeekBar.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVideoSeekBar.xcodeproj; path = "../node_modules/react-native-video-seekbar/ios/RNVideoSeekBar.xcodeproj"; sourceTree = "<group>"; };
+		31DF382DDE9841D0BFE8DE61 /* RNVisualSeekBar.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVisualSeekBar.xcodeproj; path = "../node_modules/react-native-visual-seekbar/ios/RNVisualSeekBar.xcodeproj"; sourceTree = "<group>"; };
+		670FF72F736E4AF58F4664F5 /* libRCTVideo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTVideo.a; sourceTree = "<group>"; };
+		68D1C9EA85EC435BB5A57375 /* libRNVisualSeekBar.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVisualSeekBar.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		862C48581E87363700C12EBD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		862C485A1E87363C00C12EBD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		862C485C1E87364000C12EBD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		862C485E1E87364500C12EBD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		862C48601E87364A00C12EBD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		862C48621E87365100C12EBD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		CC92FA5FD67144698D8DA775 /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTVideo.xcodeproj; path = "../node_modules/react-native-video/RCTVideo.xcodeproj"; sourceTree = "<group>"; };
-		CFB9F7ECB99C43C699629E43 /* libRNVideoSeekBar.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVideoSeekBar.a; sourceTree = "<group>"; };
-		D733252EDB3A42E899BF5A6C /* libRCTVideo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTVideo.a; sourceTree = "<group>"; };
+		8B234344CF8A4FEDA1EE9016 /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTVideo.xcodeproj; path = "../node_modules/react-native-video/RCTVideo.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,8 +221,8 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				8D50C6EBE66D45FD83A593B9 /* libRCTVideo.a in Frameworks */,
-				F76CF04195C94FF5B045EEB6 /* libRNVideoSeekBar.a in Frameworks */,
+				F6FE8CCC45644E12BAF66D62 /* libRCTVideo.a in Frameworks */,
+				4DC14EB90BC74CEF8316B72A /* libRNVisualSeekBar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				00C302C01ABCB91800DB3ED1 /* libRCTImage.a */,
-				860BA7051E86164100E52C57 /* libRCTImage-tvOS.a */,
+				8689445B1E89E1720021174D /* libRCTImage-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -265,7 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */,
-				860BA70D1E86164100E52C57 /* libRCTNetwork-tvOS.a */,
+				868944631E89E1720021174D /* libRCTNetwork-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -299,7 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				139105C11AF99BAD00B5F7CC /* libRCTSettings.a */,
-				860BA7111E86164100E52C57 /* libRCTSettings-tvOS.a */,
+				868944671E89E1720021174D /* libRCTSettings-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,7 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				139FDEF41B06529B00C62182 /* libRCTWebSocket.a */,
-				860BA71D1E86164100E52C57 /* libRCTWebSocket-tvOS.a */,
+				868944731E89E1720021174D /* libRCTWebSocket-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -331,7 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				146834041AC3E56700842450 /* libReact.a */,
-				860BA7211E86164100E52C57 /* libReact-tvOS.a */,
+				868944771E89E1720021174D /* libReact-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -340,7 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				78C398B91ACF4ADC00677621 /* libRCTLinking.a */,
-				860BA7091E86164100E52C57 /* libRCTLinking-tvOS.a */,
+				8689445F1E89E1720021174D /* libRCTLinking-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -358,8 +351,8 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				CC92FA5FD67144698D8DA775 /* RCTVideo.xcodeproj */,
-				5AD1FEB8DB15458E922F7AF8 /* RNVideoSeekBar.xcodeproj */,
+				8B234344CF8A4FEDA1EE9016 /* RCTVideo.xcodeproj */,
+				31DF382DDE9841D0BFE8DE61 /* RNVisualSeekBar.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -368,7 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				832341B51AAA6A8300B99B32 /* libRCTText.a */,
-				860BA7151E86164100E52C57 /* libRCTText-tvOS.a */,
+				8689446B1E89E1720021174D /* libRCTText-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -380,7 +373,6 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNSeekBarExampleTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
-				86D0D9201E8724BF0058BF44 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -395,61 +387,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		860BA6FE1E86164100E52C57 /* Products */ = {
+		868944521E89E1720021174D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				860BA7191E86164100E52C57 /* libRCTVideo.a */,
+				8689446F1E89E1720021174D /* libRCTVideo.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		862C48B61E8741FC00C12EBD /* Products */ = {
+		868944541E89E1720021174D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				862C48CC1E8741FC00C12EBD /* libRNVideoSeekBar.a */,
+				8689447A1E89E1720021174D /* libRNVisualSeekBar.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		86D0D9201E8724BF0058BF44 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				862C48621E87365100C12EBD /* MobileCoreServices.framework */,
-				862C48601E87364A00C12EBD /* QuartzCore.framework */,
-				862C485E1E87364500C12EBD /* AVFoundation.framework */,
-				862C485C1E87364000C12EBD /* OpenGLES.framework */,
-				862C485A1E87363C00C12EBD /* CoreVideo.framework */,
-				862C48581E87363700C12EBD /* CoreMedia.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		862C48421E8734AC00C12EBD /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				862C486A1E87382B00C12EBD /* AppDelegate.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		862C48491E87356D00C12EBD /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		00E356ED1AD99517003FC87E /* RNSeekBarExampleTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RNSeekBarExampleTests" */;
 			buildPhases = (
-				862C48491E87356D00C12EBD /* Headers */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -468,9 +428,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNSeekBarExample" */;
 			buildPhases = (
-				862C48421E8734AC00C12EBD /* Headers */,
-				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 			);
@@ -494,11 +453,7 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 5D4VBJCK75;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
-					};
-					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 5D4VBJCK75;
 					};
 				};
 			};
@@ -547,8 +502,8 @@
 					ProjectRef = 00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */;
 				},
 				{
-					ProductGroup = 860BA6FE1E86164100E52C57 /* Products */;
-					ProjectRef = CC92FA5FD67144698D8DA775 /* RCTVideo.xcodeproj */;
+					ProductGroup = 868944521E89E1720021174D /* Products */;
+					ProjectRef = 8B234344CF8A4FEDA1EE9016 /* RCTVideo.xcodeproj */;
 				},
 				{
 					ProductGroup = 139FDEE71B06529A00C62182 /* Products */;
@@ -559,8 +514,8 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = 862C48B61E8741FC00C12EBD /* Products */;
-					ProjectRef = 5AD1FEB8DB15458E922F7AF8 /* RNVideoSeekBar.xcodeproj */;
+					ProductGroup = 868944541E89E1720021174D /* Products */;
+					ProjectRef = 31DF382DDE9841D0BFE8DE61 /* RNVisualSeekBar.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -642,67 +597,67 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		860BA7051E86164100E52C57 /* libRCTImage-tvOS.a */ = {
+		8689445B1E89E1720021174D /* libRCTImage-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libRCTImage-tvOS.a";
-			remoteRef = 860BA7041E86164100E52C57 /* PBXContainerItemProxy */;
+			remoteRef = 8689445A1E89E1720021174D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		860BA7091E86164100E52C57 /* libRCTLinking-tvOS.a */ = {
+		8689445F1E89E1720021174D /* libRCTLinking-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libRCTLinking-tvOS.a";
-			remoteRef = 860BA7081E86164100E52C57 /* PBXContainerItemProxy */;
+			remoteRef = 8689445E1E89E1720021174D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		860BA70D1E86164100E52C57 /* libRCTNetwork-tvOS.a */ = {
+		868944631E89E1720021174D /* libRCTNetwork-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libRCTNetwork-tvOS.a";
-			remoteRef = 860BA70C1E86164100E52C57 /* PBXContainerItemProxy */;
+			remoteRef = 868944621E89E1720021174D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		860BA7111E86164100E52C57 /* libRCTSettings-tvOS.a */ = {
+		868944671E89E1720021174D /* libRCTSettings-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libRCTSettings-tvOS.a";
-			remoteRef = 860BA7101E86164100E52C57 /* PBXContainerItemProxy */;
+			remoteRef = 868944661E89E1720021174D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		860BA7151E86164100E52C57 /* libRCTText-tvOS.a */ = {
+		8689446B1E89E1720021174D /* libRCTText-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libRCTText-tvOS.a";
-			remoteRef = 860BA7141E86164100E52C57 /* PBXContainerItemProxy */;
+			remoteRef = 8689446A1E89E1720021174D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		860BA7191E86164100E52C57 /* libRCTVideo.a */ = {
+		8689446F1E89E1720021174D /* libRCTVideo.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRCTVideo.a;
-			remoteRef = 860BA7181E86164100E52C57 /* PBXContainerItemProxy */;
+			remoteRef = 8689446E1E89E1720021174D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		860BA71D1E86164100E52C57 /* libRCTWebSocket-tvOS.a */ = {
+		868944731E89E1720021174D /* libRCTWebSocket-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libRCTWebSocket-tvOS.a";
-			remoteRef = 860BA71C1E86164100E52C57 /* PBXContainerItemProxy */;
+			remoteRef = 868944721E89E1720021174D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		860BA7211E86164100E52C57 /* libReact-tvOS.a */ = {
+		868944771E89E1720021174D /* libReact-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libReact-tvOS.a";
-			remoteRef = 860BA7201E86164100E52C57 /* PBXContainerItemProxy */;
+			remoteRef = 868944761E89E1720021174D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		862C48CC1E8741FC00C12EBD /* libRNVideoSeekBar.a */ = {
+		8689447A1E89E1720021174D /* libRNVisualSeekBar.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libRNVideoSeekBar.a;
-			remoteRef = 862C48CB1E8741FC00C12EBD /* PBXContainerItemProxy */;
+			path = libRNVisualSeekBar.a;
+			remoteRef = 868944791E89E1720021174D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -788,17 +743,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 5D4VBJCK75;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../node_modules/react-native/React/**",
-					"$(SRCROOT)/../node_modules/react-native-video",
-					"$(SRCROOT)/../node_modules/react-native-video-seekbar/ios/RNVideoSeekBar/**",
 				);
 				INFOPLIST_FILE = RNSeekBarExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -807,10 +754,8 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNSeekBarExample.app/RNSeekBarExample";
 			};
 			name = Debug;
@@ -820,14 +765,6 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 5D4VBJCK75;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../node_modules/react-native/React/**",
-					"$(SRCROOT)/../node_modules/react-native-video",
-					"$(SRCROOT)/../node_modules/react-native-video-seekbar/ios/RNVideoSeekBar/**",
-				);
 				INFOPLIST_FILE = RNSeekBarExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -835,10 +772,8 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNSeekBarExample.app/RNSeekBarExample";
 			};
 			name = Release;
@@ -849,14 +784,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 5D4VBJCK75;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-video",
-					"$(SRCROOT)/../node_modules/react-native-video-seekbar/ios/RNVideoSeekBar/**",
-					"$(SRCROOT)/../node_modules/react-native-video-seekbar/RNSeekBarExample/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-visual-seekbar/ios/RNVisualSeekBar/**",
 				);
 				INFOPLIST_FILE = RNSeekBarExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -866,7 +799,6 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = RNSeekBarExample;
-				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -876,14 +808,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5D4VBJCK75;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-video",
-					"$(SRCROOT)/../node_modules/react-native-video-seekbar/ios/RNVideoSeekBar/**",
-					"$(SRCROOT)/../node_modules/react-native-video-seekbar/RNSeekBarExample/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-visual-seekbar/ios/RNVisualSeekBar/**",
 				);
 				INFOPLIST_FILE = RNSeekBarExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -893,7 +823,6 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = RNSeekBarExample;
-				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -937,8 +866,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-video",
-					"$(SRCROOT)/../node_modules/react-native-video-seekbar/ios/RNVideoSeekBar/**",
-					"$(SRCROOT)/../node_modules/react-native-video-seekbar/RNSeekBarExample/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-visual-seekbar/ios/RNVideoSeekBar/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -980,8 +908,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-video",
-					"$(SRCROOT)/../node_modules/react-native-video-seekbar/ios/RNVideoSeekBar/**",
-					"$(SRCROOT)/../node_modules/react-native-video-seekbar/RNSeekBarExample/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-visual-seekbar/ios/RNVideoSeekBar/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;

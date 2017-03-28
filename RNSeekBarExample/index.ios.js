@@ -15,7 +15,7 @@ import {
 } from 'react-native';
 
 import Video from 'react-native-video';
-import VideoSeekBar from 'react-native-video-seekbar'
+import VisualSeekBar from 'react-native-visual-seekbar'
 
 StatusBar.setHidden(true)
 
@@ -146,7 +146,6 @@ class RNSeekBarExample extends Component {
             repeat={true}
           />
         </TouchableOpacity>
-
         <View style={styles.controls}>
           <View style={styles.generalControls}>
             <View style={styles.resizeModeControl}>
@@ -155,7 +154,7 @@ class RNSeekBarExample extends Component {
               {this.renderResizeModeControl('stretch')}
             </View>
           </View>
-          <VideoSeekBar
+          <VisualSeekBar
             source={LETS_PAINT}
             height={75}
             width={SCREEN_WIDTH}
@@ -164,7 +163,6 @@ class RNSeekBarExample extends Component {
             themeColor={THEME_COLOR} // iOS only
             trackerColor={TRACKER_COLOR} // iOS only
             trackerHeadColor={TRACKER_HEAD_COLOR}
-
             />
         </View>
       </View>
