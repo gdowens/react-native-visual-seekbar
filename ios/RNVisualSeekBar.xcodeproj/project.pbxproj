@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		862C487A1E873F1D00C12EBD /* ICGVideoTrimmerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 862C48771E873F1D00C12EBD /* ICGVideoTrimmerView.m */; };
+		862C48A61E8740AA00C12EBD /* RNVisualSeekBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 862C48A51E8740AA00C12EBD /* RNVisualSeekBarView.m */; };
+		862C48AA1E8740CF00C12EBD /* RNVisualSeekBarViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 862C48A91E8740CF00C12EBD /* RNVisualSeekBarViewManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		860BA72B1E862BD900E52C57 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		860BA72D1E862BD900E52C57 /* libRNVisualSeekBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNVisualSeekBar.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		862C48751E873F1D00C12EBD /* ICGVideoTrimmer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICGVideoTrimmer.h; sourceTree = "<group>"; };
+		862C48761E873F1D00C12EBD /* ICGVideoTrimmerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICGVideoTrimmerView.h; sourceTree = "<group>"; };
+		862C48771E873F1D00C12EBD /* ICGVideoTrimmerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICGVideoTrimmerView.m; sourceTree = "<group>"; };
+		862C48A51E8740AA00C12EBD /* RNVisualSeekBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNVisualSeekBarView.m; sourceTree = "<group>"; };
+		862C48A71E8740B900C12EBD /* RNVisualSeekBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNVisualSeekBarView.h; sourceTree = "<group>"; };
+		862C48A81E8740C300C12EBD /* RNVisualSeekBarViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNVisualSeekBarViewManager.h; sourceTree = "<group>"; };
+		862C48A91E8740CF00C12EBD /* RNVisualSeekBarViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNVisualSeekBarViewManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		860BA72A1E862BD900E52C57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		860BA7241E862BD900E52C57 = {
+			isa = PBXGroup;
+			children = (
+				860BA72F1E862BD900E52C57 /* RNVisualSeekBar */,
+				860BA72E1E862BD900E52C57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		860BA72E1E862BD900E52C57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				860BA72D1E862BD900E52C57 /* libRNVisualSeekBar.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		860BA72F1E862BD900E52C57 /* RNVisualSeekBar */ = {
+			isa = PBXGroup;
+			children = (
+				862C48701E873F1D00C12EBD /* ICGVideoTrimmer */,
+				862C48A51E8740AA00C12EBD /* RNVisualSeekBarView.m */,
+				862C48A71E8740B900C12EBD /* RNVisualSeekBarView.h */,
+				862C48A81E8740C300C12EBD /* RNVisualSeekBarViewManager.h */,
+				862C48A91E8740CF00C12EBD /* RNVisualSeekBarViewManager.m */,
+			);
+			name = RNVisualSeekBar;
+			path = RNVideoSeekBar;
+			sourceTree = "<group>";
+		};
+		862C48701E873F1D00C12EBD /* ICGVideoTrimmer */ = {
+			isa = PBXGroup;
+			children = (
+				862C48751E873F1D00C12EBD /* ICGVideoTrimmer.h */,
+				862C48761E873F1D00C12EBD /* ICGVideoTrimmerView.h */,
+				862C48771E873F1D00C12EBD /* ICGVideoTrimmerView.m */,
+			);
+			path = ICGVideoTrimmer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		860BA72C1E862BD900E52C57 /* RNVisualSeekBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 860BA7361E862BD900E52C57 /* Build configuration list for PBXNativeTarget "RNVisualSeekBar" */;
+			buildPhases = (
+				860BA7291E862BD900E52C57 /* Sources */,
+				860BA72A1E862BD900E52C57 /* Frameworks */,
+				860BA72B1E862BD900E52C57 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNVisualSeekBar;
+			productName = RNVideoSeekBar;
+			productReference = 860BA72D1E862BD900E52C57 /* libRNVisualSeekBar.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		860BA7251E862BD900E52C57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Deco Software Inc.";
+				TargetAttributes = {
+					860BA72C1E862BD900E52C57 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = M5Y2HY4UM2;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 860BA7281E862BD900E52C57 /* Build configuration list for PBXProject "RNVisualSeekBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 860BA7241E862BD900E52C57;
+			productRefGroup = 860BA72E1E862BD900E52C57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				860BA72C1E862BD900E52C57 /* RNVisualSeekBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		860BA7291E862BD900E52C57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862C48AA1E8740CF00C12EBD /* RNVisualSeekBarViewManager.m in Sources */,
+				862C48A61E8740AA00C12EBD /* RNVisualSeekBarView.m in Sources */,
+				862C487A1E873F1D00C12EBD /* ICGVideoTrimmerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		860BA7341E862BD900E52C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		860BA7351E862BD900E52C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		860BA7371E862BD900E52C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = M5Y2HY4UM2;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNVideoSeekBar/RNVideoSeekBar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		860BA7381E862BD900E52C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = M5Y2HY4UM2;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNVideoSeekBar/RNVideoSeekBar-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		860BA7281E862BD900E52C57 /* Build configuration list for PBXProject "RNVisualSeekBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				860BA7341E862BD900E52C57 /* Debug */,
+				860BA7351E862BD900E52C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		860BA7361E862BD900E52C57 /* Build configuration list for PBXNativeTarget "RNVisualSeekBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				860BA7371E862BD900E52C57 /* Debug */,
+				860BA7381E862BD900E52C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 860BA7251E862BD900E52C57 /* Project object */;
+}

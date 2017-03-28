@@ -1,2 +1,2 @@
-# react-native-visual-seekbar
-A visual seekbar for react-native-video built on ICGVideoTrimmer library
+# react-native-video-seekbar
+A visual seekbar for react-native-video

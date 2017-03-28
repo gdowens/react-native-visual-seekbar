@@ -1,0 +1,23 @@
+{
+  "name": "react-native-visual-seekbar",
+  "version": "0.1.0",
+  "description": "A visual seekbar for react-native-video",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdowens/react-native-video-seekbar.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gdowens/react-native-video-seekbar/issues"
+  },
+  "homepage": "https://github.com/gdowens/react-native-video-seekbar#readme",
+  "devDependencies": {
+    "react": "^15.3.1",
+    "react-native": "^0.36.1"
+  }
+}
