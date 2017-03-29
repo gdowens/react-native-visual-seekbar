@@ -22,6 +22,7 @@
 @property (strong, nonatomic) UILabel *timeText;
 @property (strong, nonatomic) UIPanGestureRecognizer *panGestureRecognizer;
 
+@property (nonatomic) Float64 duration;
 @property (nonatomic) BOOL panning;
 @property (nonatomic) BOOL viewsInitialized;
 @property (nonatomic) CGFloat offset;
@@ -99,12 +100,17 @@
   return _borderWidth ?: 1;
 }
 
+- (Float64)duration
+{
+  return _duration ?: 0.0;
+}
+
 - (UIView *) createTrackerView
 {
   CGFloat containerWidth = 30;
   CGFloat base = 10.0;
   CGFloat height = base;
-  UIView *trackerContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, containerWidth, CGRectGetHeight(self.contentView.frame) + 20)];
+  UIView *trackerContainer = [[UIView alloc] initWithFrame:CGRectMake(-1*containerWidth/2, 0, containerWidth, CGRectGetHeight(self.contentView.frame) + 20)];
   trackerContainer.clipsToBounds = NO;
   trackerContainer.layer.masksToBounds = NO;
 //  trackerContainer.layer.masksToBounds = false;
@@ -151,7 +157,7 @@
 
 - (void) updateTimeText
 {
-  int m = fmod(trunc((self.time / 60.0)), 60.0);
+  int m = fmod((int)(self.time / 60.0), 60.0);
   int s = fmod(self.time, 60.0);
 
   NSString *formattedTime = [NSString stringWithFormat:@"%02u:%02u", m, s];
@@ -215,33 +221,52 @@
 }
 
 - (void)handleTrackerPan: (UIPanGestureRecognizer *) recognizer {
-  CGPoint point = [self.panGestureRecognizer locationInView:self.trackerView];
+  CGPoint point = [self.panGestureRecognizer locationInView:self.frameView];
 
   if (recognizer.state == UIGestureRecognizerStateEnded) {
     self.panning = NO;
   } else {
     self.panning = YES;
   }
-
   CGRect trackerFrame = self.trackerView.frame;
-  trackerFrame.origin.x += point.x;
+  CGFloat trackerLinePos = point.x;
+  CGFloat posToMove = point.x - trackerFrame.size.width/2;
+  CGFloat pendingTime = trackerLinePos / self.widthPerSecond;
+  if (pendingTime < 0) {
+    trackerFrame.origin.x = -1 * trackerFrame.size.width/2;
+    pendingTime = 0;
+  } else if (pendingTime >= self.duration) {
+    trackerFrame.origin.x = (self.duration * self.widthPerSecond) - trackerFrame.size.width/2;
+    pendingTime = self.duration;
+  } else {
+    trackerFrame.origin.x = posToMove;
+  }
   self.trackerView.frame = trackerFrame;
-  CGFloat time = trackerFrame.origin.x / self.widthPerSecond;
-  self.time = time;
+  NSLog(@"Tracker Pan Time: %f", pendingTime);
+  NSLog(@"Tracker Pan Move: %f", posToMove);
+  self.time = pendingTime;
   [self updateTimeText];
   [self scrollViewMightAdjust:NO];
-  [self.delegate trimmerView:self currentPosition:time ];
-
+  [self.delegate trimmerView:self currentPosition:self.time];
 }
 
 - (void)moveTrackerLayer:(UITapGestureRecognizer *)gesture
 {
   CGPoint point = [gesture locationInView:self.frameView];
   CGRect trackerFrame = self.trackerView.frame;
-  trackerFrame.origin.x = point.x;
+  CGFloat posToMove = point.x - trackerFrame.size.width/2;
+  CGFloat pendingTime = point.x / self.widthPerSecond;
+  if (pendingTime < 0) {
+    trackerFrame.origin.x = -1 * trackerFrame.size.width/2;
+    pendingTime = 0;
+  } else if (pendingTime > self.duration) {
+    trackerFrame.origin.x = (self.duration * self.widthPerSecond) - trackerFrame.size.width/2;
+    pendingTime = self.duration;
+  } else {
+    trackerFrame.origin.x = posToMove;
+  }
   self.trackerView.frame = trackerFrame;
-  CGFloat time = trackerFrame.origin.x / self.widthPerSecond;
-  self.time = time;
+  self.time = pendingTime;
   [self updateTimeText];
   [self scrollViewMightAdjust:YES toCenter:YES];
   [self.delegate trimmerView:self currentPosition:self.time];
@@ -325,17 +350,19 @@
 
 - (void)seekToTime:(CGFloat) time
 {
-  BOOL animateTransition = trunc(time*100) != trunc(self.time*100);
+  BOOL animateTransition = (int)(time*100) != (int)(self.time*100);
+  CGFloat posToMove = (time * self.widthPerSecond);
   self.time = time;
   [self updateTimeText];
-  CGFloat posToMove = time * self.widthPerSecond;
   CGRect trackerFrame = self.trackerView.frame;
 
   // also the possibility that the tracker is out of sync with time
-  animateTransition = animateTransition || (trunc(posToMove * 100) != trunc(trackerFrame.origin.x));
+  animateTransition = animateTransition || ((int)(posToMove * 100) != (int)(trackerFrame.origin.x + trackerFrame.size.width/2)*100);
 
-  CGFloat delta = posToMove - trackerFrame.origin.x;
-  trackerFrame.origin.x = posToMove;
+  CGFloat delta = posToMove - trackerFrame.origin.x + self.trackerView.frame.size.width/2;
+  NSLog(@"Seek Time Move: %f", posToMove - trackerFrame.size.width/2);
+  NSLog(@"Seek Time Time: %f", time);
+  trackerFrame.origin.x = posToMove - trackerFrame.size.width/2;
 
   if (animateTransition) {
     UIViewAnimationOptions options = UIViewAnimationCurveEaseInOut | UIViewAnimationOptionAllowUserInteraction;
@@ -385,24 +412,24 @@
     rect.size.width = videoScreen.size.width;
     tmp.frame = rect;
     [self.frameView addSubview:tmp];
-    picWidth = tmp.frame.size.width / 2;
+    picWidth = tmp.frame.size.width / 3;
     CGImageRelease(halfWayImage);
   }
 
-  Float64 duration = CMTimeGetSeconds([self.asset duration]);
+  _duration = CMTimeGetSeconds([self.asset duration]);
   CGFloat screenWidth = CGRectGetWidth(self.frame); // quick fix to make up for the width of thumb views
   NSInteger actualFramesNeeded;
 
-  CGFloat frameViewFrameWidth = (duration / self.maxLength) * screenWidth;
+  CGFloat frameViewFrameWidth = (_duration / self.maxLength) * screenWidth;
   [self.frameView setFrame:CGRectMake(0, _offset, frameViewFrameWidth, CGRectGetHeight(self.frameView.frame))];
   CGFloat contentViewFrameWidth = CMTimeGetSeconds([self.asset duration]) <= self.maxLength + 0.5 ? screenWidth + 30 : frameViewFrameWidth;
   [self.contentView setFrame:CGRectMake(0, 0, contentViewFrameWidth, CGRectGetHeight(self.contentView.frame))];
   [self.scrollView setContentSize:self.contentView.frame.size];
   NSInteger minFramesNeeded = screenWidth / picWidth + 1;
-  actualFramesNeeded =  (duration / self.maxLength) * minFramesNeeded + 1;
+  actualFramesNeeded =  (_duration / self.maxLength) * minFramesNeeded + 1;
 
-  Float64 durationPerFrame = duration / (actualFramesNeeded*1.0);
-  self.widthPerSecond = frameViewFrameWidth / duration;
+  Float64 durationPerFrame = _duration / (actualFramesNeeded*1.0);
+  self.widthPerSecond = frameViewFrameWidth / _duration;
 
   int preferredWidth = 0;
   NSMutableArray *times = [[NSMutableArray alloc] init];
